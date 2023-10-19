@@ -73,7 +73,6 @@
     
     
         public int getTotalDineroAcumulado() {
-        totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         return totalDineroAcumulado;
     }
 }
