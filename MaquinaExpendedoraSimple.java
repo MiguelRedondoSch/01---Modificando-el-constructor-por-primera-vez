@@ -24,12 +24,17 @@
         estacionDestino = "Alicante";
     }
     
-        public MaquinaExpendedoraSimple(int precioDelBillete,String destino) {
+    public MaquinaExpendedoraSimple(int precioDelBillete,String destino) {
         precioBillete = precioDelBillete;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
         estacionOrigen = "Leon";
         estacionDestino = destino;
+    }
+    
+    public int setPrecioBillete (int precioDelBillete) {
+        precioBillete = precioDelBillete;
+        return precioBillete;
     }
     
     /**
