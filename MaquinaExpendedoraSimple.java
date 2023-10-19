@@ -37,6 +37,11 @@
         return precioBillete;
     }
     
+        public int reducirPrecioBillete (int precioDelBillete) {
+        precioBillete = precioBillete - precioDelBillete;
+        return precioBillete;
+    }
+    
     /**
      * Devuelve el precio del billete
      */
