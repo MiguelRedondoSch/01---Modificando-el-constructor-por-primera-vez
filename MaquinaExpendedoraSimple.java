@@ -46,7 +46,7 @@
         return balanceClienteActual;
     }
 
-    /**
+     /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
@@ -69,5 +69,11 @@
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
+    }
+    
+    
+        public int getTotalDineroAcumulado() {
+        totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
+        return totalDineroAcumulado;
     }
 }
