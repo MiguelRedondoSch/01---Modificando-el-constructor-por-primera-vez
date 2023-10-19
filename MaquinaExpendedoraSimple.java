@@ -32,17 +32,22 @@
         estacionDestino = destino;
     }
     
-    public int setPrecioBillete (int precioDelBillete) {
+    public int setPrecioBillete(int precioDelBillete) {
         precioBillete = precioDelBillete;
         return precioBillete;
     }
     
-        public int reducirPrecioBillete (int precioDelBillete) {
-        precioBillete = precioBillete - precioDelBillete;
+    public int reducirPrecioBillete(int precioARestar) {
+        precioBillete = precioBillete - precioARestar;
         return precioBillete;
     }
     
-    /**
+    public String vaciarDepositoDinero() {
+        totalDineroAcumulado = 0;
+        return "Deposito vaciado";
+    }
+    
+     /**
      * Devuelve el precio del billete
      */
     public int getPrecioBillete() {
